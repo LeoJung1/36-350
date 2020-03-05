@@ -1,0 +1,40 @@
+"0","set.seed(808)"
+"0","momVal = rep(0,10)"
+"0","mvueVal = rep(0,10)"
+"0","mleVal = rep(0,10)"
+"0","y <- c(16,12,19,25,14,31,26,23,38,29,15,32,19,34,27)"
+"0","momVal = 2 * mean(y)"
+"0","mvueVal = (16/15) * max(y)"
+"0","mleVal = max(y)"
+"0","estimator = c(momVal,mvueVal,mleVal)"
+"0","data = data.frame(estimator)"
+"0","rownames(data) <- c(""MOM"",""MVUE"",""MLE"")"
+"0","pander(t(data))"
+"1","
+-----------------------------------
+    &nbsp;       MOM   MVUE    MLE 
+--------------- ----- ------- -----
+ **estimator**   48    40.53   38  
+-----------------------------------
+
+"
+"0","prob20 = punif(20,0,estimator)"
+"0","prob30 = 1 - punif(30,0,estimator)"
+"0","prob50 = qunif(0.50,0,estimator)"
+"0","final = rbind(prob20,prob30,prob50)"
+"0","rownames(final) <- c(""less than 20 min"", ""more than 30min"","
+"0","                     ""50 percent of distribution"")"
+"0","colnames(final) <- c(""MOM"",""MVUE"",""MLE"")"
+"0","pander(final)"
+"1","
+-----------------------------------------------------------
+             &nbsp;                MOM      MVUE     MLE   
+-------------------------------- -------- -------- --------
+      **less than 20 min**        0.4167   0.4934   0.5263 
+
+      **more than 30min**         0.375    0.2599   0.2105 
+
+ **50 percent of distribution**     24     20.27      19   
+-----------------------------------------------------------
+
+"

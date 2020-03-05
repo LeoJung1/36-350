@@ -1,0 +1,12 @@
+"0","f(""A"")"
+"2","The function changes input characters to lower characters
+"
+"1","[1]"
+"1"," ""a"""
+"1","
+"
+"0","suppressMessages(f(""A""))"
+"1","[1]"
+"1"," ""a"""
+"1","
+"

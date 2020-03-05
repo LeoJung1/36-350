@@ -1,0 +1,10 @@
+"0","f = function(x) {"
+"0","  message(""The function changes input characters to lower characters"")"
+"0","  if (typeof(x) != ""character"") stop(""x should be character."")"
+"0","  tolower(x)"
+"0","}"
+"0","f(1)"
+"2","The function changes input characters to lower characters
+"
+"2","Error in f(1) : x should be character.
+"

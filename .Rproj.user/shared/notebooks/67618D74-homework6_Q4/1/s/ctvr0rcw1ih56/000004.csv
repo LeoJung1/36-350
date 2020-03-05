@@ -1,0 +1,11 @@
+"0","# Style edits"
+"0","knitr::opts_chunk$set(message = FALSE) # include this if you don't want markdown to knit messages"
+"0","knitr::opts_chunk$set(warning = FALSE) # include this if you don't want markdown to knit warnings"
+"0","knitr::opts_chunk$set(echo = TRUE) # set echo=FALSE to hide code from output (for the exercise, you need to show your code)"
+"0","# Include libraries - install them first in case you have not done so before"
+"0","library(pander) "
+"0","library(ggplot2)"
+"2","Registered S3 method overwritten by 'dplyr':
+  method           from
+  print.rowwise_df     
+"

@@ -1,0 +1,324 @@
+]0;~/Desktop/36-350[?1034hleo-jung:36-350 jaehoonjung$ [Kleo-jung:36-350 jaehoonjung$ pwd
+/Users/jaehoonjung/Desktop/36-350
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ gitstatus[K[K[K[K[K[K status
+On branch new_branch
+Your branch is ahead of 'origin/new_branch' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gitignore[m
+	[31m36-350.Rproj[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git branch
+  master[m
+* [32mnew_branch[m
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ ls
+36-350.Rproj		README.md		dark_and_stormy.R
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ less dark_and_stormy.R 
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git status
+On branch new_branch
+Your branch is ahead of 'origin/new_branch' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   dark_and_stormy.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gitignore[m
+	[31m36-350.Rproj[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git add --all
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git add --all[3Pstatus
+On branch new_branch
+Your branch is ahead of 'origin/new_branch' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   .gitignore[m
+	[32mnew file:   36-350.Rproj[m
+	[32mmodified:   dark_and_stormy.R[m
+
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git commit
+[?1000h[new_branch 6cde6a6] made change to dark and stormy file
+ 3 files changed, 18 insertions(+), 1 deletion(-)
+ create mode 100644 .gitignore
+ create mode 100644 36-350.Rproj
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git stsatu\[K[K[K[K[Katus
+On branch new_branch
+Your branch is ahead of 'origin/new_branch' by 2 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git push -[Korigin new_branch[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kbranch
+  master[m
+* [32mnew_branch[m
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git push origin new_branch
+To https://github.com/LeoJung1/36-350
+ ! [rejected]        new_branch -> new_branch (fetch first)
+error: failed to push some refs to 'https://github.com/LeoJung1/36-350'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git pil[K[Kull
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[Kremote: Counting objects:  66% (2/3)[Kremote: Counting objects: 100% (3/3)[Kremote: Counting objects: 100% (3/3), done.[K
+remote: Compressing objects: 100% (1/1)[Kremote: Compressing objects: 100% (1/1), done.[K
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  50% (1/2)   Unpacking objects: 100% (2/2)   Unpacking objects: 100% (2/2), done.
+From https://github.com/LeoJung1/36-350
+   3c966a3..133ba20  new_branch -> origin/new_branch
+CONFLICT (modify/delete): dark_and_stormy.R deleted in 133ba20d5eb6b5e553b69d7199faed12c2d6f4d4 and modified in HEAD. Version HEAD of dark_and_stormy.R left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ gst
+bash: gst: command not found
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git status
+On branch new_branch
+Your branch and 'origin/new_branch' have diverged,
+and have 2 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+
+	[31mdeleted by them: dark_and_stormy.R[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ la
+bash: la: command not found
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ ls
+36-350.Rproj		README.md		dark_and_stormy.R
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git add -a[K-all
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ gs[Kit stsa[K[Katus
+On branch new_branch
+Your branch and 'origin/new_branch' have diverged,
+and have 2 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git chek[Kckout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git [K branch
+* [32mmaster[m
+  new_branch[m
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git branch -d new_be[Kranch
+error: The branch 'new_branch' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D new_branch'.
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git branch -d new_branch[1P new_branchD new_branch
+Deleted branch new_branch (was 6cde6a6).
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git branch -D new_branchd[C[C[C[C[C[C[C[C[C[C[C[K
+* [32mmaster[m
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git branch -D new_branch[K
+* [32mmaster[m
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git pull origin master
+From https://github.com/LeoJung1/36-350
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git checkout -b new_branch
+Switched to a new branch 'new_branch'
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git branch
+  master[m
+* [32mnew_branch[m
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git status
+On branch new_branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   dark_and_stormy.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rhistory[m
+	[31m.Rproj.user/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git add -- all[K[K[K[Kall
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git[K[K[Kgit add --all[3Pstatus
+On branch new_branch
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   .Rhistory[m
+	[32mnew file:   .Rproj.user/593C3471/console06/16133167[m
+	[32mnew file:   .Rproj.user/593C3471/console06/16133167.env[m
+	[32mnew file:   .Rproj.user/593C3471/console06/INDEX001[m
+	[32mnew file:   .Rproj.user/593C3471/pcs/files-pane.pper[m
+	[32mnew file:   .Rproj.user/593C3471/pcs/source-pane.pper[m
+	[32mnew file:   .Rproj.user/593C3471/pcs/windowlayoutstate.pper[m
+	[32mnew file:   .Rproj.user/593C3471/pcs/workbench-pane.pper[m
+	[32mnew file:   .Rproj.user/593C3471/rmd-outputs[m
+	[32mnew file:   .Rproj.user/593C3471/saved_source_markers[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/11E39151[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/2DD119D[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/4528B799[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/549550E0[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/5A247F32[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/5B6FA60A[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/62BC7209[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/6769C380[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/80FE25BD[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/BD3D2FC1[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/INDEX[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-90038E8E/lock_file[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/1595AFD0-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/24B23BB8-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/332E7029[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/332E7029-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/98023D6B[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/98023D6B-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/B82EA4B1[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/B82EA4B1-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/BA6A069B[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/BA6A069B-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/BD4E41CD[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/BD4E41CD-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/DACA13E6[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/DACA13E6-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/EF131B9B-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/lock_file[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471A04AD6CE/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/c4z3xkcvae96h/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/c4z3xkcvae96h/000003.error[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/c8xjyka3awsxx/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/cba8t9hpns95u/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/cd3zrdag1kjrb/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/cd3zrdag1kjrb/000003.error[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/cool55nflyvue/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/cqfi0f2ekf7vk/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/cqfi0f2ekf7vk/000003.error[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/cu9gt4g841s0r/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/s/c8xjyka3awsxx/000004.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/s/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/c0phxvfppnjjx/000006.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/c7arlnm3uiwfv/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/cdodprxalf9ve/000006.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/cdodprxalf9ve/000007.html[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/cdodprxalf9ve/000007.metadata[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/cdodprxalf9ve/000008.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/cfa9dipuilyto/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/ctvr0rcw1ih56/000004.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/cyvv2ubgb2rnj/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/768728A6-HW_8/1/593C3471D244B6CE/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/768728A6-HW_8/1/s/cle4toe1gk8cy/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/768728A6-HW_8/1/s/cle4toe1gk8cy/000003.error[m
+	[32mnew file:   .Rproj.user/shared/notebooks/768728A6-HW_8/1/s/cle4toe1gk8cy/000004.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/768728A6-HW_8/1/s/cqf4joa6yenq5/000004.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/768728A6-HW_8/1/s/cqf4joa6yenq5/000005.error[m
+	[32mnew file:   .Rproj.user/shared/notebooks/patch-chunk-names[m
+	[32mnew file:   .Rproj.user/shared/notebooks/paths[m
+	[32mmodified:   dark_and_stormy.R[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/593C3471/console06/16133167[m
+
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git --[K[K[Kad[K[K add --all
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git status
+On branch new_branch
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   .Rhistory[m
+	[32mnew file:   .Rproj.user/593C3471/console06/16133167[m
+	[32mnew file:   .Rproj.user/593C3471/console06/16133167.env[m
+	[32mnew file:   .Rproj.user/593C3471/console06/INDEX001[m
+	[32mnew file:   .Rproj.user/593C3471/pcs/files-pane.pper[m
+	[32mnew file:   .Rproj.user/593C3471/pcs/source-pane.pper[m
+	[32mnew file:   .Rproj.user/593C3471/pcs/windowlayoutstate.pper[m
+	[32mnew file:   .Rproj.user/593C3471/pcs/workbench-pane.pper[m
+	[32mnew file:   .Rproj.user/593C3471/rmd-outputs[m
+	[32mnew file:   .Rproj.user/593C3471/saved_source_markers[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/11E39151[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/2DD119D[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/4528B799[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/549550E0[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/5A247F32[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/5B6FA60A[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/62BC7209[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/6769C380[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/80FE25BD[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/BD3D2FC1[m
+	[32mnew file:   .Rproj.user/593C3471/sources/prop/INDEX[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-90038E8E/lock_file[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/1595AFD0-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/24B23BB8-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/332E7029[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/332E7029-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/98023D6B[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/98023D6B-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/B82EA4B1[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/B82EA4B1-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/BA6A069B[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/BA6A069B-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/BD4E41CD[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/BD4E41CD-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/DACA13E6[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/DACA13E6-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/EF131B9B-contents[m
+	[32mnew file:   .Rproj.user/593C3471/sources/s-D244B6CE/lock_file[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471A04AD6CE/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/c4z3xkcvae96h/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/c4z3xkcvae96h/000003.error[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/c8xjyka3awsxx/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/cba8t9hpns95u/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/cd3zrdag1kjrb/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/cd3zrdag1kjrb/000003.error[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/cool55nflyvue/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/cqfi0f2ekf7vk/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/cqfi0f2ekf7vk/000003.error[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/593C3471D244B6CE/cu9gt4g841s0r/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/s/c8xjyka3awsxx/000004.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/4C8FC2BD-HW_08/1/s/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/c0phxvfppnjjx/000006.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/c7arlnm3uiwfv/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/cdodprxalf9ve/000006.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/cdodprxalf9ve/000007.html[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/cdodprxalf9ve/000007.metadata[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/cdodprxalf9ve/000008.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/cfa9dipuilyto/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/ctvr0rcw1ih56/000004.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/67618D74-homework6_Q4/1/s/cyvv2ubgb2rnj/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/768728A6-HW_8/1/593C3471D244B6CE/chunks.json[m
+	[32mnew file:   .Rproj.user/shared/notebooks/768728A6-HW_8/1/s/cle4toe1gk8cy/000002.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/768728A6-HW_8/1/s/cle4toe1gk8cy/000003.error[m
+	[32mnew file:   .Rproj.user/shared/notebooks/768728A6-HW_8/1/s/cle4toe1gk8cy/000004.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/768728A6-HW_8/1/s/cqf4joa6yenq5/000004.csv[m
+	[32mnew file:   .Rproj.user/shared/notebooks/768728A6-HW_8/1/s/cqf4joa6yenq5/000005.error[m
+	[32mnew file:   .Rproj.user/shared/notebooks/patch-chunk-names[m
+	[32mnew file:   .Rproj.user/shared/notebooks/paths[m
+	[32mmodified:   dark_and_stormy.R[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/593C3471/console06/16133167[m
+
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ git add f = function(x) {
+bash: syntax error near unexpected token `('
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$   if(typeof(x) != "character") stop(" x shoul d be character")
+bash: syntax error near unexpected token `x'
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$   toupper(x) 
+bash: syntax error near unexpected token `x'
+]0;~/Desktop/36-350leo-jung:36-350 jaehoonjung$ }[Kgit add .Rproj.user/593C3471/console06/161331 67

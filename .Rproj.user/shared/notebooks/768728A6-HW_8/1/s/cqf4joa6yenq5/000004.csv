@@ -1,0 +1,7 @@
+"0","f = function(x) { "
+"0","  if (typeof(x) != ""character"") stop(""x should be character."")"
+"0","  tolower(x)"
+"0","}"
+"0","f(1)"
+"2","Error in f(1) : x should be character.
+"

@@ -1,0 +1,105 @@
+---
+title: 'Homework 6: question 4'
+output:
+  pdf_document # change this to pdf_document to make a pdf
+---
+
+```{r, echo=FALSE, warning=FALSE}
+# Style edits
+knitr::opts_chunk$set(message = FALSE) # include this if you don't want markdown to knit messages
+knitr::opts_chunk$set(warning = FALSE) # include this if you don't want markdown to knit warnings
+knitr::opts_chunk$set(echo = TRUE) # set echo=FALSE to hide code from output (for the exercise, you need to show your code)
+
+# Include libraries - install them first in case you have not done so before
+library(pander) 
+library(ggplot2)
+```
+
+
+
+## Homework 6 Question 4(d)
+
+```{r}
+set.seed(808)
+
+momVal = rep(0,10)
+mvueVal = rep(0,10)
+mleVal = rep(0,10)
+
+for (ii in 1:10)
+{
+  y <- runif(20,0,27)
+  momVal[ii] = 2 * mean(y)
+  mvueVal[ii] = (21/20) * max(y)
+  mleVal[ii] = max(y)
+}
+
+data = data.frame("MOM" = momVal,"MVUE" = mvueVal,"MLE" = mleVal)
+pander(t(data))
+
+est = data.frame("Mean" = c(mean(momVal),mean(mvueVal),mean(mleVal)),
+                 "Variance" = c(var(momVal),var(mvueVal),var(mleVal)))
+rownames(est) <- c("MOM","MVUE","MLE")
+
+pander(t(est))
+
+
+```
+
+
+## Homwework 6 Question 4(e)
+```{r}
+set.seed(808)
+
+momVal = rep(0,10)
+mvueVal = rep(0,10)
+mleVal = rep(0,10)
+
+for (ii in 1:10)
+{
+  y <- runif(100,0,27)
+  momVal[ii] = 2 * mean(y)
+  mvueVal[ii] = (101/100) * max(y)
+  mleVal[ii] = max(y)
+}
+
+data = data.frame("MOM" = momVal,"MVUE" = mvueVal,"MLE" = mleVal)
+pander(t(data))
+
+est = data.frame("Mean" = c(mean(momVal),mean(mvueVal),mean(mleVal)),
+                 "Variance" = c(var(momVal),var(mvueVal),var(mleVal)))
+rownames(est) <- c("MOM","MVUE","MLE")
+
+pander(t(est))
+```
+
+## Homework 6 Question 4(f)
+
+```{r}
+set.seed(808)
+
+momVal = rep(0,10)
+mvueVal = rep(0,10)
+mleVal = rep(0,10)
+
+y <- c(16,12,19,25,14,31,26,23,38,29,15,32,19,34,27)
+momVal = 2 * mean(y)
+mvueVal = (16/15) * max(y)
+mleVal = max(y)
+
+estimator = c(momVal,mvueVal,mleVal)
+data = data.frame(estimator)
+rownames(data) <- c("MOM","MVUE","MLE")
+pander(t(data))
+
+prob20 = punif(20,0,estimator)
+prob30 = 1 - punif(30,0,estimator)
+prob50 = qunif(0.50,0,estimator)
+
+final = rbind(prob20,prob30,prob50)
+rownames(final) <- c("less than 20 min", "more than 30min",
+                     "50 percent of distribution")
+colnames(final) <- c("MOM","MVUE","MLE")
+pander(final)
+```
+
